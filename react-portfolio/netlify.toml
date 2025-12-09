@@ -1,7 +1,0 @@
-[build]
-  base = "react-portfolio"
-  command = "npm run build"
-  publish = "react-portfolio/build"
-  
-[build.environment]
-  NODE_VERSION = "18.18.0"
