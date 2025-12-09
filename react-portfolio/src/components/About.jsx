@@ -13,11 +13,6 @@ const About = () => {
   const [isDownloading, setIsDownloading] = useState(false);
   const [isDownloaded, setIsDownloaded] = useState(false);
 
-  const stats = [
-    { number: '2+', label: 'Years Experience' },
-    { number: '10+', label: 'Projects Completed' },
-    { number: '15+', label: 'Technologies' }
-  ];
 
   
   const particles = Array.from({ length: 12 }, (_, i) => ({
@@ -138,20 +133,7 @@ const About = () => {
               </p>
             </div>
 
-            <div className="stats-grid">
-              {stats.map((stat, index) => (
-                <motion.div 
-                  key={index}
-                  className="stat-item"
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={inView ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.6, delay: 0.7 + index * 0.1 }}
-                >
-                  <div className="stat-number">{stat.number}</div>
-                  <div className="stat-label">{stat.label}</div>
-                </motion.div>
-              ))}
-            </div>
+           
 
             {}
             <div className="about-actions">
