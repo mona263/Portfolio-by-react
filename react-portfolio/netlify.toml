@@ -1,8 +1,7 @@
 [build]
+  base = "react-portfolio"
   command = "npm run build"
-  publish = "build"
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+  publish = "react-portfolio/build"
+  
+[build.environment]
+  NODE_VERSION = "18.18.0"
